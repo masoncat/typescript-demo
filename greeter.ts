@@ -1,20 +1,11 @@
-interface Person {
-    firstName: string;
-    lastName: string;
-}
+// Declare a tuple type
+let x: [string, number];
+// Initialize it
+x = ['hello', 10]; // OK
+// Initialize it incorrectly
+x = [10, 'hello']; // Error
+x[3] = 'world';
+console.log(x[5].toString());
+x[6] = true;
 
-class Student {
-    fullName: string;
-
-    constructor(public firstName, public middleInitial, public lastName) {
-        this.fullName = firstName + " " + middleInitial + " " + lastName;
-    }
-}
-
-let user = new Student("Jane","D","luo");
-
-function greeter(person: Person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-
-document.body.innerHTML = greeter(user);
+// document.body.innerHTML = greeter(user);

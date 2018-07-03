@@ -1,14 +1,10 @@
-var Student = /** @class */ (function () {
-    function Student(firstName, middleInitial, lastName) {
-        this.firstName = firstName;
-        this.middleInitial = middleInitial;
-        this.lastName = lastName;
-        this.fullName = firstName + " " + middleInitial + " " + lastName;
-    }
-    return Student;
-}());
-var user = new Student("Jane", "D", "luo");
-function greeter(person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-document.body.innerHTML = greeter(user);
+// Declare a tuple type
+var x;
+// Initialize it
+x = ['hello', 10]; // OK
+// Initialize it incorrectly
+x = [10, 'hello']; // Error
+x[3] = 'world';
+console.log(x[5].toString());
+x[6] = true;
+// document.body.innerHTML = greeter(user);
