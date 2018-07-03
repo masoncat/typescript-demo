@@ -1,5 +1,5 @@
 // Declare a tuple type
-let x: [string, number,boolean];
+let x: [string, number, boolean];
 // Initialize it
 x = ['hello', 10]; // OK
 // Initialize it incorrectly
@@ -10,13 +10,14 @@ x[6] = true;
 
 // document.body.innerHTML = greeter(user);
 
-function n1():never {
+function n1(): never {
     throw new Error('ssss')
 }
-let n2:void = null;
-let n3:any  =null;
-let n4:null = null;
-let n5:undefined = null;
+
+let n2: void = null;
+let n3: any = null;
+let n4: null = null;
+let n5: undefined = null;
 
 // 返回never的函数必须存在无法达到的终点
 function error(message: string): never {
@@ -27,3 +28,7 @@ function error(message: string): never {
 function fail() {
     return error("Something failed");
 }
+
+let someValue: number = 1;
+
+let strLength: number = (<string>someValue).length;

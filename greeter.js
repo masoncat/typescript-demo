@@ -23,3 +23,5 @@ function error(message) {
 function fail() {
     return error("Something failed");
 }
+var someValue = 1;
+var strLength = someValue.length;
