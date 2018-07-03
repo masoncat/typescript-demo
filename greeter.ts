@@ -9,3 +9,21 @@ console.log(x[5].toString());
 x[6] = true;
 
 // document.body.innerHTML = greeter(user);
+
+function n1():never {
+    throw new Error('ssss')
+}
+let n2:void = null;
+let n3:any  =null;
+let n4:null = null;
+let n5:undefined = null;
+
+// 返回never的函数必须存在无法达到的终点
+function error(message: string): never {
+    throw new Error(message);
+}
+
+// 推断的返回值类型为never
+function fail() {
+    return error("Something failed");
+}
