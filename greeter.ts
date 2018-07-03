@@ -1,5 +1,5 @@
 // Declare a tuple type
-let x: [string, number];
+let x: [string, number,boolean];
 // Initialize it
 x = ['hello', 10]; // OK
 // Initialize it incorrectly
