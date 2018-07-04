@@ -25,3 +25,8 @@ function fail() {
 }
 var someValue = 1;
 var strLength = someValue.length;
+var Clock = /** @class */ (function () {
+    function Clock(h, m) {
+    }
+    return Clock;
+}());

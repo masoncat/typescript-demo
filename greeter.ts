@@ -32,3 +32,12 @@ function fail() {
 let someValue: number = 1;
 
 let strLength: number = (<string>someValue).length;
+
+interface ClockInterface {
+    currentTime: Date;
+}
+
+class Clock implements ClockInterface {
+    currentTime:string;
+    constructor(h: number, m: number) { }
+}
