@@ -30,3 +30,7 @@ var Clock = /** @class */ (function () {
     }
     return Clock;
 }());
+function loggingIdentity(arg) {
+    console.log(arg.length); // Error: T doesn't have .length
+    return arg;
+}
